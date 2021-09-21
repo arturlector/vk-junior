@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		126A4BA426FA16A10056B74A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126A4BA226FA16A10056B74A /* Main.storyboard */; };
 		126A4BA626FA16A20056B74A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 126A4BA526FA16A20056B74A /* Assets.xcassets */; };
 		126A4BA926FA16A20056B74A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126A4BA726FA16A20056B74A /* LaunchScreen.storyboard */; };
+		126A4BB526FA246E0056B74A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 126A4BB426FA246E0056B74A /* Alamofire */; };
+		126A4BB826FA27380056B74A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 126A4BB726FA27380056B74A /* Realm */; };
+		126A4BBA26FA27380056B74A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 126A4BB926FA27380056B74A /* RealmSwift */; };
+		126A4BBD26FA27710056B74A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 126A4BBC26FA27710056B74A /* SwiftyJSON */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +35,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				126A4BBA26FA27380056B74A /* RealmSwift in Frameworks */,
+				126A4BB826FA27380056B74A /* Realm in Frameworks */,
+				126A4BBD26FA27710056B74A /* SwiftyJSON in Frameworks */,
+				126A4BB526FA246E0056B74A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +115,12 @@
 			dependencies = (
 			);
 			name = "vk-junior";
+			packageProductDependencies = (
+				126A4BB426FA246E0056B74A /* Alamofire */,
+				126A4BB726FA27380056B74A /* Realm */,
+				126A4BB926FA27380056B74A /* RealmSwift */,
+				126A4BBC26FA27710056B74A /* SwiftyJSON */,
+			);
 			productName = "vk-junior";
 			productReference = 126A4B9926FA16A10056B74A /* vk-junior.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +148,11 @@
 				Base,
 			);
 			mainGroup = 126A4B9026FA16A10056B74A;
+			packageReferences = (
+				126A4BB326FA246E0056B74A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				126A4BB626FA27380056B74A /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				126A4BBB26FA27710056B74A /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 126A4B9A26FA16A10056B74A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -365,6 +384,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		126A4BB326FA246E0056B74A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.4;
+			};
+		};
+		126A4BB626FA27380056B74A /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.15.1;
+			};
+		};
+		126A4BBB26FA27710056B74A /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		126A4BB426FA246E0056B74A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 126A4BB326FA246E0056B74A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		126A4BB726FA27380056B74A /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 126A4BB626FA27380056B74A /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		126A4BB926FA27380056B74A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 126A4BB626FA27380056B74A /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		126A4BBC26FA27710056B74A /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 126A4BBB26FA27710056B74A /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 126A4B9126FA16A10056B74A /* Project object */;
 }
