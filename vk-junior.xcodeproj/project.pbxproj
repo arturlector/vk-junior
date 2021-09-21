@@ -3,27 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		126A4B9D26FA16A10056B74A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126A4B9C26FA16A10056B74A /* AppDelegate.swift */; };
 		126A4B9F26FA16A10056B74A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126A4B9E26FA16A10056B74A /* SceneDelegate.swift */; };
-		126A4BA126FA16A10056B74A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126A4BA026FA16A10056B74A /* ViewController.swift */; };
 		126A4BA426FA16A10056B74A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126A4BA226FA16A10056B74A /* Main.storyboard */; };
 		126A4BA626FA16A20056B74A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 126A4BA526FA16A20056B74A /* Assets.xcassets */; };
 		126A4BA926FA16A20056B74A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 126A4BA726FA16A20056B74A /* LaunchScreen.storyboard */; };
+		126A4BB526FA246E0056B74A /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 126A4BB426FA246E0056B74A /* Alamofire */; };
+		126A4BB826FA27380056B74A /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 126A4BB726FA27380056B74A /* Realm */; };
+		126A4BBA26FA27380056B74A /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 126A4BB926FA27380056B74A /* RealmSwift */; };
+		126A4BBD26FA27710056B74A /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 126A4BBC26FA27710056B74A /* SwiftyJSON */; };
+		126A4BC426FA373E0056B74A /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126A4BC326FA373E0056B74A /* AuthViewController.swift */; };
+		126A4BC826FA38830056B74A /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126A4BC726FA38830056B74A /* Session.swift */; };
+		126A4BCB26FA399B0056B74A /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126A4BCA26FA399B0056B74A /* FriendsViewController.swift */; };
+		126A4BCE26FA3C020056B74A /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 126A4BCD26FA3C020056B74A /* SwiftKeychainWrapper */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		126A4B9926FA16A10056B74A /* vk-junior.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "vk-junior.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		126A4B9C26FA16A10056B74A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		126A4B9E26FA16A10056B74A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		126A4BA026FA16A10056B74A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		126A4BA326FA16A10056B74A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		126A4BA526FA16A20056B74A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		126A4BA826FA16A20056B74A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		126A4BAA26FA16A20056B74A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		126A4BC326FA373E0056B74A /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		126A4BC726FA38830056B74A /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		126A4BCA26FA399B0056B74A /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				126A4BBA26FA27380056B74A /* RealmSwift in Frameworks */,
+				126A4BB826FA27380056B74A /* Realm in Frameworks */,
+				126A4BCE26FA3C020056B74A /* SwiftKeychainWrapper in Frameworks */,
+				126A4BBD26FA27710056B74A /* SwiftyJSON in Frameworks */,
+				126A4BB526FA246E0056B74A /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +72,7 @@
 			children = (
 				126A4BB126FA16C40056B74A /* App */,
 				126A4BB226FA17DB0056B74A /* Modules */,
+				126A4BC526FA38660056B74A /* Services */,
 				126A4BB026FA16BD0056B74A /* Resources */,
 			);
 			path = "vk-junior";
@@ -86,9 +101,34 @@
 		126A4BB226FA17DB0056B74A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				126A4BA026FA16A10056B74A /* ViewController.swift */,
+				126A4BC126FA36A00056B74A /* Auth */,
+				126A4BC926FA39750056B74A /* Friends */,
 			);
 			path = Modules;
+			sourceTree = "<group>";
+		};
+		126A4BC126FA36A00056B74A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				126A4BC326FA373E0056B74A /* AuthViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		126A4BC526FA38660056B74A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				126A4BC726FA38830056B74A /* Session.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		126A4BC926FA39750056B74A /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+				126A4BCA26FA399B0056B74A /* FriendsViewController.swift */,
+			);
+			path = Friends;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +147,13 @@
 			dependencies = (
 			);
 			name = "vk-junior";
+			packageProductDependencies = (
+				126A4BB426FA246E0056B74A /* Alamofire */,
+				126A4BB726FA27380056B74A /* Realm */,
+				126A4BB926FA27380056B74A /* RealmSwift */,
+				126A4BBC26FA27710056B74A /* SwiftyJSON */,
+				126A4BCD26FA3C020056B74A /* SwiftKeychainWrapper */,
+			);
 			productName = "vk-junior";
 			productReference = 126A4B9926FA16A10056B74A /* vk-junior.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +181,12 @@
 				Base,
 			);
 			mainGroup = 126A4B9026FA16A10056B74A;
+			packageReferences = (
+				126A4BB326FA246E0056B74A /* XCRemoteSwiftPackageReference "Alamofire" */,
+				126A4BB626FA27380056B74A /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+				126A4BBB26FA27710056B74A /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				126A4BCC26FA3C020056B74A /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
 			productRefGroup = 126A4B9A26FA16A10056B74A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -161,7 +214,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				126A4BA126FA16A10056B74A /* ViewController.swift in Sources */,
+				126A4BC826FA38830056B74A /* Session.swift in Sources */,
+				126A4BCB26FA399B0056B74A /* FriendsViewController.swift in Sources */,
+				126A4BC426FA373E0056B74A /* AuthViewController.swift in Sources */,
 				126A4B9D26FA16A10056B74A /* AppDelegate.swift in Sources */,
 				126A4B9F26FA16A10056B74A /* SceneDelegate.swift in Sources */,
 			);
@@ -365,6 +420,69 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		126A4BB326FA246E0056B74A /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.4;
+			};
+		};
+		126A4BB626FA27380056B74A /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.15.1;
+			};
+		};
+		126A4BBB26FA27710056B74A /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		126A4BCC26FA3C020056B74A /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		126A4BB426FA246E0056B74A /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 126A4BB326FA246E0056B74A /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		126A4BB726FA27380056B74A /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 126A4BB626FA27380056B74A /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		126A4BB926FA27380056B74A /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 126A4BB626FA27380056B74A /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+		126A4BBC26FA27710056B74A /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 126A4BBB26FA27710056B74A /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+		126A4BCD26FA3C020056B74A /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 126A4BCC26FA3C020056B74A /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 126A4B9126FA16A10056B74A /* Project object */;
 }
